@@ -5,20 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Include Tailwind CSS -->
+  <link href="./styles-output.css" rel="stylesheet">
+  <!-- Include custom CSS file -->
   <link href="styles.css" rel="stylesheet">
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;600&family=Fraunces:wght@700;900&display=swap">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body, a {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Fraunces', sans-serif;
+    }
+    .learn-link {
+      font-family: 'Fraunces', sans-serif;
+    }
   </style>
+
 </head>
 <body>
-  About
+  <nav class="fixed top-0 left-0 w-full px-5 py-5 flex justify-between items-center bg-transparent z-50">
+
+    <a href="#">
+      <img src="./images/logo.svg" alt="sunnyside-logo">
+    </a>
+
+    <ul id="menu" class="hidden md:flex space-x-4 text-sm text-white">
+      <li class="rounded-full py-2 px-3 bg-white bg-opacity-0 hover:bg-opacity-20 transition duration-500">
+        <a href="#">About</a>
+      </li>
+      <li class="rounded-full py-2 px-3 bg-white bg-opacity-0 hover:bg-opacity-20 transition duration-500">
+        <a href="#">Services</a>
+      </li>
+      <li class="rounded-full py-2 px-3 bg-white bg-opacity-0 hover:bg-opacity-20 transition duration-500">
+        <a href="#">Projects</a>
+      </li>
+      <li class="rounded-full py-2 px-3 bg-white bg-opacity-0 hover:bg-opacity-20 transition duration-500">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="bg-image-container">
+    <div class="heading-text-container flex flex-col text-center">
+      <h1 class="mt-28 rem text-4xl tracking-widest text-white">WE ARE CREATIVES</h1>
+      <img class="w-8 mb-48 mx-auto mt-20" src="./images/icon-arrow-down.svg" alt="">
+    </div>
+  </div>
+
+  <section class="grid grid-cols-2">
+    <div class="flex flex-col justify-center p-16 h-auto">
+      <div class="w-[520px] ml-auto px-6">
+        <h2 class="text-5xl font-bold">Transform your brand</h2>
+        <p class="text-gray-500 my-10">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <div class="">
+          <button class="learn-link">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+    <figure class="h-full">
+      <img src="./images/desktop/image-transform.jpg" alt="egg" class="object-cover w-full">
+    </figure>
+  </section>
+
+  <section class="grid grid-cols-2">
+    <figure class="">
+      <img class="object-cover w-full" src="./images/desktop/image-stand-out.jpg" alt="">
+    </figure>
+    <div class="flex flex-col justify-center p-16 h-auto">
+      <h2 class="text-4xl font-bold">Stand out to the right audience
+      </h2>
+      <p class="text-gray-500 mt-5">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+      <a href="#">LEARN MORE</a>
+    </div>
+  </section>
+
+  <div class="flex flex-row">
+    <div class="text-primary-dark-desaturated-cyan flex flex-col p-20 w-2/4 feature-tile-3 text-center">
+      <h2 class="mt-auto text-4xl font-bold">Graphic design</h2>
+      <p class="mt-5">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+    <div class="text-primary-dark-blue flex flex-col p-20 w-2/4 feature-tile-4 text-center">
+      <h2 class="mt-auto text-4xl font-bold">Photography</h2>
+      <p class="mt-5">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+  </div>
+
+  <!-- About
   Services
   Projects
   Contact
@@ -61,11 +139,7 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

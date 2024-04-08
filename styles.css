@@ -2,3 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-image-container {
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* .feature-tile {
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+    width: 50vw;
+} */
+
+.feature-tile-2 {
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+    width: 50vw;
+}
+
+.feature-tile-3 {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+    width: 50vw;
+}
+
+.feature-tile-4 {
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+    width: 50vw;
+}
+
+.learn-link {
+    font-family: 'Fraunces', sans-serif;
+    position: relative;
+    color: inherit; /* Ensures that the link text color remains the same */
+  }
+
+  .learn-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust this value to control the distance of the rectangle from the text */
+    left: 0;
+    width: 100%; /* Ensures that the rectangle stretches across the width of the text */
+    height: 10px; /* Adjust this value to control the thickness of the rectangle */
+    background-color: hsl(51, 100%, 49%); /* Color of the rectangle */
+    border-radius: 10px; /* Adjust this value to control the corner radius */
+    z-index: -1;
+  }
+
+  .learn-link-2 {
+    font-family: 'Fraunces', sans-serif;
+    position: relative;
+    color: inherit; /* Ensures that the link text color remains the same */
+  }
+
+  .learn-link-2::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust this value to control the distance of the rectangle from the text */
+    left: 0;
+    width: 100%; /* Ensures that the rectangle stretches across the width of the text */
+    height: 10px; /* Adjust this value to control the thickness of the rectangle */
+    background-color: hsl(7, 99%, 70%); /* Color of the rectangle */
+    border-radius: 10px; /* Adjust this value to control the corner radius */
+    z-index: -1;
+  }
